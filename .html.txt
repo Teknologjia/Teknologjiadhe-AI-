@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teknologjia & AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="index-body">
+
+  <!-- Seksioni Hero -->
+  <section class="hero">
+    <div class="overlay">
+      <h1>Mirësevini te Projekti: Teknologjia dhe AI</h1>
+      <p>Kjo faqe u ndërtua me përkushtim nga ne, nxënësit e klasës 10-G. Kemi përfshirë një Asistent AI që ju ndihmon me çdo pyetje!</p>
+      <a href="ai.html" class="btn">Pyet Asistentin AI</a>
+    </div>
+  </section>
+
+  <!-- Seksioni Rreth Projektit -->
+  <section class="section light">
+    <h2>Rreth Projektit</h2>
+    <p>
+      Teknologjia është një pjesë thelbësore e jetës sonë. AI, ose Inteligjenca Artificiale, është një fushë që po zhvillohet me shpejtësi. Ne kemi ndërtuar këtë projekt për të treguar si AI mund të përdoret në mënyrë interaktive për të ndihmuar njerëzit në mësim, argëtim dhe shumë më tepër.
+    </p>
+  </section>
+
+  <!-- Seksioni Funksionaliteti i AI -->
+  <section class="section dark">
+    <h2>Çfarë mund të bëjë Asistenti AI?</h2>
+    <ul>
+      <li>U përgjigjet pyetjeve për AI dhe teknologjinë</li>
+      <li>Mund të shfaqë imazhe të kafshëve të lezetshme</li>
+      <li>Është krijuar plotësisht nga ne si grup i klasës 10-G</li>
+    </ul>
+  </section>
+
+  <!-- Seksioni Ekipi -->
+  <section class="section light">
+    <h2>Kush jemi ne?</h2>
+    <p>
+      Jemi një grup nxënësish pasionantë për teknologjinë nga klasa e 10-G. Ky projekt është një rezultat i punës sonë në grup, kreativitetit dhe dëshirës për të mësuar më shumë rreth AI.
+    </p>
+  </section>
+
+  <!-- Seksioni Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 - Projekti i Teknologjisë nga klasa 10-G</p>
+    <p><a href="ai.html" class="btn small">Shko te AI</a></p>
+  </footer>
+
+</body>
+</html>

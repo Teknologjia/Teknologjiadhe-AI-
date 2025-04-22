@@ -1,0 +1,88 @@
+function sendMessage() {
+    const input = document.getElementById("userInput");
+    const chatBox = document.getElementById("chat-box");
+    const q = input.value.toLowerCase();
+    let response = "";
+
+    if (
+        q.includes("pershendetje") || q.includes("hello") || q.includes("hi") || q.includes("hej") || 
+        q.includes("si je") || q.includes("cfare behet") || q.includes("yo") || q.includes("tung") ||
+        q.includes("mirëdita") || q.includes("çkemi") || q.includes("qkemi") || q.includes("o ai")
+    ) {
+        const greetings = [
+            "Përshëndetje! Si mund të të ndihmoj sot?",
+            "Hello! Pyet për çdo gjë që dëshiron.",
+            "Hej! Gati për ndonjë pyetje interesante?",
+            "Çkemi! Kam shumë njohuri për të ndarë me ty.",
+            "Si je? Unë jam këtu për të ndihmuar!",
+            "Tung! Gëzohem që je këtu!",
+            "Yo! Gati për pak teknologji?",
+            "Mirëdita! Si po e kalon ditën?",
+            "Qkemi! Çfarë do të dish për AI ose teknologjinë?"
+        ];
+        response = greetings[Math.floor(Math.random() * greetings.length)];
+    } else if (q.includes("faleminderit") || q.includes("thank you") || q.includes("flm")) {
+        response = "Gjithmonë me kënaqësi! Nëse ke pyetje të tjera, jam këtu.";
+    } else if (q.includes("cfare eshte ai")) {
+        response = "AI (Inteligjenca Artificiale) është teknologjia që i jep makinave aftësi të mendojnë dhe mësojnë.";
+    } else if (q.includes("cfare eshte teknologjia")) {
+        response = "Teknologjia është përdorimi i dijes për të krijuar zgjidhje praktike në jetën e përditshme.";
+    } else if (q.includes("cfare eshte shkenca")) {
+        response = "Shkenca është procesi i zbulimit të fakteve përmes vëzhgimit dhe eksperimentimit.";
+    } else if (q.includes("cfare eshte interneti")) {
+        response = "Interneti është një rrjet global që lidh miliona kompjuterë për të ndarë informacion.";
+    } else if (q.includes("cfare eshte kompjuteri")) {
+        response = "Kompjuteri është një pajisje elektronike që përpunon të dhëna dhe kryen detyra.";
+    } else if (q.includes("cfare eshte aplikacioni")) {
+        response = "Aplikacioni është një program i krijuar për të kryer funksione të caktuara në një pajisje.";
+    } else if (q.includes("robot") || q.includes("robotike")) {
+        response = "Robotika është shkenca që merret me krijimin dhe programimin e robotëve.";
+    } else if (q.includes("cfare eshte programimi")) {
+        response = "Programimi është mënyra për t’i thënë kompjuterit çfarë të bëjë përmes kodeve.";
+    } else if (q.includes("si do jete e ardhmja")) {
+        response = "E ardhmja do të përfshijë teknologji të avancuar, robotë inteligjentë dhe AI më të mençur.";
+    } else if (q.includes("foto mace") || q.includes("mace")) {
+        response = "Shiko këtë mace të ëmbël: <br><img src='https://placekitten.com/300/200' width='300'/>";
+    } else if (q.includes("foto qen") || q.includes("qen")) {
+        response = "Ja një qen simpatik: <br><img src='https://placedog.net/300/200' width='300'/>";
+    } else if (q.includes("foto ari") || q.includes("ari")) {
+        response = "Ky ari është i fuqishëm! <br><img src='https://placebear.com/300/200' width='300'/>";
+    } else {
+        response = "Më fal, nuk e kuptova pyetjen. Mund ta shprehësh ndryshe?";
+    }
+else if (q.includes("cfare eshte inteligjenca artificiale")) {
+    response = "Inteligjenca Artificiale është aftësia e makinave për të kryer detyra që zakonisht kërkojnë inteligjencë njerëzore.";
+}
+else if (q.includes("cfare eshte machine learning")) {
+    response = "Machine learning është një pjesë e AI ku kompjuterët mësojnë nga të dhënat pa u programuar në mënyrë eksplicite.";
+}
+else if (q.includes("cfare eshte big data")) {
+    response = "Big Data përfshin sasi shumë të mëdha të dhënash që analizohen për të nxjerrë informacione të dobishme.";
+}
+else if (q.includes("cfare eshte cloud computing")) {
+    response = "Cloud computing është ofrimi i shërbimeve kompjuterike përmes internetit në vend të pajisjeve lokale.";
+}
+else if (q.includes("si funksionon nje kompjuter")) {
+    response = "Një kompjuter merr të dhëna (input), i përpunon ato (procesim) dhe i jep si rezultat (output).";
+}
+else if (q.includes("cfare eshte nje algoritëm")) {
+    response = "Algoritmi është një grup hapash të strukturuara për të zgjidhur një problem.";
+}
+else if (q.includes("cfare eshte hardware")) {
+    response = "Hardware është pjesa fizike e një kompjuteri, si tastiera, monitori, hard disku.";
+}
+else if (q.includes("cfare eshte software")) {
+    response = "Software është pjesa logjike e kompjuterit – programet dhe sistemet operative që ekzekutohen.";
+}
+else if (q.includes("cfare eshte realiteti virtual")) {
+    response = "Realiteti virtual është një përvojë dixhitale ku përdoruesi përfshihet në një mjedis të krijuar nga kompjuteri.";
+}
+else if (q.includes("cfare eshte realiteti i shtuar")) {
+    response = "Realiteti i shtuar shton elemente dixhitale mbi pamjen reale përmes kamerave dhe ekranit.";
+}
+
+    chatBox.innerHTML += <p><strong>Ti:</strong> ${input.value}</p>;
+    chatBox.innerHTML += <p><strong>AI:</strong> ${response}</p>;
+    input.value = "";
+    chatBox.scrollTop = chatBox.scrollHeight;
+}
